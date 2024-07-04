@@ -1,20 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:500');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #e7e7e7;
     color: #333;
 }
 
-header {
-    background: #08001d;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+h1 {
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 20px;
 }
 h2 {
     text-align: left;
-    
+    padding-top: 40px;    
 }
 header nav ul {
     list-style: none;
@@ -23,7 +24,7 @@ header nav ul {
 
 header nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 header nav ul li a {
@@ -46,7 +47,7 @@ main {
 }
 
 .card {
-    background: #fff;
+    background: #0d1f36;
     border: 1px solid #ddd;
     margin: 5px;
     width: calc(33.333% - 20px);
@@ -79,7 +80,7 @@ main {
     display: inline-block;
     padding: 10px 15px;
     margin-top: 10px;
-    background-color: #333;
+    background-color: #0d1f36;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -93,9 +94,47 @@ main {
 footer {
     text-align: center;
     padding: 20px;
-    background: #08001d;
+    background: #0d1f36;
     color: #fff;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
+}
+#introCarousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
+  height: 100vh;
+}
+
+.carousel-item:nth-child(1) {
+  background-image: url('images/face_capa.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-item:nth-child(2) {
+  background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-item:nth-child(3) {
+  background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+  #introCarousel {
+    margin-top: -58.59px;
+  }
+}
+
+.navbar .nav-link {
+  color: #0d1f36 !important;
 }
