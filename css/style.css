@@ -90,16 +90,7 @@ main {
 .button:hover {
     background-color: #555;
 }
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #0d1f36;
-    color: #fff;
-    position: relative;
-    width: 100%;
-    bottom: 0;
-}
+ 
 #introCarousel,
 .carousel-inner,
 .carousel-item,
